@@ -39,7 +39,7 @@ class HomeFragment : Fragment() {
         private lateinit var sifre: EditText
         private lateinit var GirisYap: Button
         private lateinit var KayitOl: Button
-        private val baseUrl = "http://192.168.144.50:5555"
+        private val baseUrl = "http://192.168.118.25:5555"
 
         override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,

@@ -61,8 +61,6 @@
         android:padding="16dp">
     </LinearLayout>
 
-
-
     <TextView
         android:id="@+id/Sleeping"
         android:layout_width="0dp"

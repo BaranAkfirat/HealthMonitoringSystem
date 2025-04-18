@@ -36,7 +36,7 @@ class Register : Fragment() {
         private lateinit var kullaniciAdi: EditText
         private lateinit var sifre: EditText
         private lateinit var registerButton: Button
-        private val baseUrl = "http://192.168.144.50:5555"
+        private val baseUrl = "http://192.168.118.25:5555"
 
         override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,
@@ -67,7 +67,7 @@ class Register : Fragment() {
             val client = OkHttpClient()
 
             val request = Request.Builder()
-                .url(baseUrl + "/add_data")
+                .url(baseUrl + "add_data")
                 .post(RequestBody.create("application/json".toMediaTypeOrNull(), requestBody))
                 .build()
 

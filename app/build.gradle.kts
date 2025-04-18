@@ -48,7 +48,7 @@ dependencies {
     implementation("io.ktor:ktor-client-json:2.3.10")
     implementation ("com.squareup.okhttp3:okhttp:4.12.0")
     implementation ("com.squareup.okhttp3:okhttp:4.9.3")
-    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0")
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

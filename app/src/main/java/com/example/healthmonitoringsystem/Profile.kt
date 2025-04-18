@@ -13,7 +13,7 @@ import java.io.IOException
 class Profile : Fragment() {
 
     private lateinit var nameTextView: TextView
-    private val baseUrl = "http://192.168.144.50:5555"
+    private val baseUrl = "http://192.168.118.25:5555"
 
     override fun onCreateView(
         inflater: LayoutInflater,
