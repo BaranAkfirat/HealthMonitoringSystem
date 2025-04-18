@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPage"
+    android:background="@color/turquoise">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-43dp">
+
+
+        <ImageView
+            android:id="@+id/resim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:layout_marginBottom="90dp"
+            android:src="@drawable/logoopacity"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/Sport"
+        android:layout_width="0dp"
+        android:layout_height="113dp"
+        android:layout_marginStart="245dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="62dp"
+        android:background="@drawable/edittext1"
+        android:contentDescription="Sport"
+        android:src="@drawable/sport"
+        app:layout_constraintBottom_toTopOf="@+id/Sleep"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/Sleep"
+        android:layout_width="0dp"
+        android:layout_height="113dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/edittext1"
+        android:contentDescription="Sleep"
+        android:src="@drawable/bed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/HeartRate"
+        android:layout_width="0dp"
+        android:layout_height="113dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="245dp"
+        android:layout_marginBottom="62dp"
+        android:background="@drawable/edittext1"
+        android:contentDescription="HeartRate"
+        android:src="@drawable/heartrate"
+        app:layout_constraintBottom_toTopOf="@+id/Sleep"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appointment" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="682dp"
+        android:background="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+
+            android:id="@+id/notification"
+            android:contentDescription="notification"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/notification" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="360dp"
+        android:layout_marginBottom="52dp"
+        android:contentDescription="profile"
+        android:src="@drawable/profile"
+        app:layout_constraintBottom_toTopOf="@+id/pill"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+    <ImageButton
+        android:contentDescription="appointment"
+        android:id="@+id/appointment"
+        android:layout_width="0dp"
+        android:layout_height="113dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="245dp"
+        android:background="@drawable/edittext1"
+        android:src="@drawable/event"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <ImageButton
+        android:id="@+id/pill"
+        android:layout_width="0dp"
+        android:layout_height="113dp"
+        android:layout_marginStart="245dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="53dp"
+        android:background="@drawable/edittext1"
+        android:contentDescription="Pill"
+        android:src="@drawable/images"
+        app:layout_constraintBottom_toTopOf="@+id/Sport"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        android:layout_weight="1"
+        android:text="Health Monitoring System"
+        android:textAppearance="@style/TextAppearance.Material3.ActionBar.Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
